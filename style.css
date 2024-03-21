@@ -1,7 +1,83 @@
-body{
-    height: 100vh;
-    background-image: linear-gradient(#005aa7 ,#ffde40);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A4A82; /* اللون السماوي الداكن */
+    color: white;
 }
-a{
-color : red
+
+header {
+    background: #086FA1;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.featured {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background: #086FA1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* التصميم الأساسي للأجهزة الصغيرة */
+body {
+    /* القواعد الأساسية ذاتها */
+}
+
+/* استعلام إعلامي للأجهزة التي تزيد عرض شاشتها عن 600px */
+@media (min-width: 600px) {
+    nav ul li {
+        margin: 0 20px;
+    }
+}
+
+/* استعلام إعلامي للأجهزة التي تزيد عرض شاشتها عن 768px */
+@media (min-width: 768px) {
+    nav ul {
+        text-align: left;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+}
+
+/* استعلام إعلامي للأجهزة التي تزيد عرض شاشتها عن 992px */
+@media (min-width: 992px) {
+    .featured {
+        padding: 100px 10px;
+    }
+}
+
+/* استعلام إعلامي للأجهزة التي تزيد عرض شاشتها عن 1200px */
+@media (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
